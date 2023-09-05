@@ -117,10 +117,16 @@ nav .text-nav a:hover::after {
   transition: 0.3s ease-in-out;
 }
 
-#hero img {
+.hero img:nth-child(1) {
   position: absolute;
   bottom: 60px;
   left: -150px;
+  height: 18rem;
+}
+.hero img:nth-child(2) {
+  position: absolute;
+  bottom: 60px;
+  right: -150px;
   height: 18rem;
 }
 
