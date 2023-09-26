@@ -5,6 +5,7 @@
   font-family: "poppins";
   overflow-x: hidden;
   scroll-behavior: smooth;
+  /* overflow: hidden; */
 }
 
 body {
@@ -12,30 +13,57 @@ body {
 }
 
 .container {
-  padding: 1rem 4rem;
+  padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 8rem; */
   background-color: #f9fbfa;
 }
-
-nav .text-nav {
-  height: 2rem;
+nav {
+  height: 8rem;
+  line-height: 2rem;
 }
-
+nav .text-nav {
+  display: flex;
+  align-items: center;
+}
 nav .text-nav a {
   text-decoration: none;
-  margin: 2rem;
+  margin: 0 2rem;
   text-align: center;
+  align-items: center;
   color: #000646;
-  position: relative;
-  z-index: 1;
   transition: 0.2s ease-in-out;
   border-color: #e3e57c;
 }
 
 nav .text-nav a:hover {
   border-bottom: 2px solid #e3e57c;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+}
+nav .cta a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f9fbfa;
+  background-color: #12d188;
+  height: 2rem;
+  border-radius: 1rem;
+  line-height: 2rem;
+  font-size: 10px;
+  padding: 0 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+nav .cta a:hover {
+  transform: translateY(-3px);
+  background-color: #000646;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 #hero {
@@ -425,6 +453,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .skill-judul h1 {
