@@ -16,19 +16,19 @@ body {
   padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* height: 4rem; */
-  overflow: hidden;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 8rem; */
   background-color: #f9fbfa;
 }
 nav {
   height: 8rem;
+  line-height: 2rem;
 }
 nav .text-nav {
   display: flex;
   align-items: center;
 }
-
 nav .text-nav a {
   text-decoration: none;
   margin: 0 2rem;
@@ -46,7 +46,6 @@ nav .text-nav a:hover {
 .cta {
   display: flex;
   align-items: center;
-  height: 3rem;
 }
 nav .cta a {
   display: inline-block;
@@ -269,7 +268,6 @@ nav .cta a:hover {
   font-size: 18px;
   background-color: #ffffff;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;

@@ -3,13 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins";
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  /* overflow: hidden; */
-}
-
-body {
-  background-color: #f9fbfa;
 }
 
 .container {
@@ -17,26 +10,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 4rem; */
-  overflow: hidden;
-  background-color: #f9fbfa;
+
+  background-color: #0f172a;
 }
 nav {
   height: 8rem;
+  line-height: 2rem;
 }
 nav .text-nav {
   display: flex;
   align-items: center;
 }
-
 nav .text-nav a {
   text-decoration: none;
   margin: 0 2rem;
   text-align: center;
   align-items: center;
-  color: #000646;
+  color: white;
   transition: 0.2s ease-in-out;
   border-color: #e3e57c;
+}
+
+nav .container h1 {
+  color: white;
 }
 
 nav .text-nav a:hover {
@@ -63,8 +59,13 @@ nav .cta a {
 
 nav .cta a:hover {
   transform: translateY(-3px);
-  background-color: #000646;
+  background-color: #ffffff;
   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000646;
+}
+
+body {
+  background-color: #0f172a;
 }
 
 #hero {
@@ -74,7 +75,7 @@ nav .cta a:hover {
 .container-hero {
   width: 100%;
   height: 600px;
-  background-color: #f9fbfa;
+  background-color: #0f172a;
 }
 
 .container-hero .item-hero {
@@ -88,7 +89,7 @@ nav .cta a:hover {
 .container-hero .item-hero h1 {
   text-align: center;
   font-size: 3rem;
-  color: #000646;
+  color: #fff;
   position: relative;
   z-index: 1;
 }
@@ -108,6 +109,7 @@ nav .cta a:hover {
 .container-hero .item-hero h3 {
   font-size: 30px;
   font-weight: 400;
+  color: #fff;
 }
 
 .item-hero a {
@@ -132,16 +134,10 @@ nav .cta a:hover {
 }
 
 .hero img:nth-child(1) {
-  position: absolute;
-  bottom: 60px;
-  left: -150px;
-  height: 18rem;
+  display: none;
 }
 .hero img:nth-child(2) {
-  position: absolute;
-  bottom: 60px;
-  right: -150px;
-  height: 18rem;
+  display: none;
 }
 
 .container-about {
@@ -162,6 +158,7 @@ nav .cta a:hover {
   position: relative;
   z-index: 1;
   width: 13rem;
+  color: white;
 }
 
 .item-about .bio h1::after {
@@ -183,6 +180,7 @@ nav .cta a:hover {
   position: relative;
   z-index: 1;
   /* width: 13rem; */
+  color: white;
 }
 
 .container-about .item-about img {
@@ -214,7 +212,7 @@ nav .cta a:hover {
   text-decoration: none;
   font-size: 25px;
   padding-right: 1rem;
-  color: #000646;
+  color: white;
 }
 
 .bio .sosmed a:nth-child(1):hover {
@@ -227,10 +225,6 @@ nav .cta a:hover {
   color: #5bc8ff;
 }
 
-.container-project {
-  background-color: #f9fbfa;
-}
-
 .item-project {
   display: flex;
   align-items: center;
@@ -240,7 +234,7 @@ nav .cta a:hover {
 
 .item-project h1 {
   font-size: 42px;
-  color: #000646;
+  color: #fff;
   z-index: 1;
   position: relative;
   margin: 0rem auto 2rem;
@@ -333,7 +327,6 @@ nav .cta a:hover {
 .container-contact {
   width: 100%;
   height: 600px;
-  background-color: #f9fbfa;
 }
 
 .item-contact {
@@ -346,7 +339,7 @@ nav .cta a:hover {
 
 .item-contact .judul-contact h1 {
   font-size: 42px;
-  color: #000646;
+  color: #fff;
   position: relative;
   z-index: 1;
 }
@@ -366,7 +359,7 @@ nav .cta a:hover {
 
 .form {
   margin: 1rem auto 0;
-  border: 2px solid black;
+  border: 2px solid white;
   width: 30%;
   height: 22rem;
   border-radius: 1rem;
@@ -456,6 +449,7 @@ button:hover {
   align-items: center;
   text-align: center;
   margin-top: 2rem;
+  color: #fff;
 }
 
 .skill-judul h1 {
@@ -463,6 +457,7 @@ button:hover {
   position: relative;
   z-index: 1;
   width: auto;
+  color: #fff;
 }
 
 .skill-judul h1::after {
@@ -504,6 +499,7 @@ button:hover {
   margin: 0 auto;
   border-radius: 1rem;
   padding: 1rem 1rem;
+  background-color: #fff;
 }
 .item2 {
   display: flex;
@@ -517,6 +513,7 @@ button:hover {
   margin: 0 auto;
   border-radius: 1rem;
   padding: 1rem 1rem;
+  background-color: #fff;
 }
 .item3 {
   display: flex;
@@ -530,6 +527,7 @@ button:hover {
   margin: 0 auto;
   border-radius: 1rem;
   padding: 1rem 1rem;
+  background-color: #fff;
 }
 .item4 {
   display: flex;
@@ -543,6 +541,7 @@ button:hover {
   margin: 0 auto;
   border-radius: 1rem;
   padding: 1rem 1rem;
+  background-color: #fff;
 }
 
 .item5 {
@@ -557,6 +556,7 @@ button:hover {
   margin: 0 auto;
   border-radius: 1rem;
   padding: 1rem 1rem;
+  background-color: #fff;
 }
 
 .item6 {
@@ -572,12 +572,14 @@ button:hover {
   margin: 0 auto;
   border-radius: 1rem;
   padding: 1rem 1rem;
+  background-color: #fff;
 }
 
 footer {
   height: 20rem;
-  background-color: #04132a;
+  background-color: #010038;
   z-index: 2;
+  color: #fff;
 }
 
 footer .footer-content {
@@ -592,6 +594,11 @@ footer .footer-content {
 }
 footer .footer-content h2 {
   font-size: 40px;
+  color: #fff;
+}
+
+footer h4 {
+  color: #fff;
 }
 
 footer .footer-content .icon {
@@ -609,7 +616,7 @@ footer .footer-content i:hover {
 }
 
 footer h4 {
-  color: #fff;
+  color: #35389d;
   text-align: center;
   font-weight: 300;
   margin: 1rem;
